@@ -137,7 +137,7 @@ FriendlyChat.prototype.onAuthStateChanged = function(user) {
     this.signOutButton.removeAttribute('hidden');
 
     // Hide sign-in button.
-    this.signInButton.setAttribute('hidden', 'true');
+    this.signInButton.setAttribute(true');
 
     // We load currently existing chant messages.
     this.loadMessages();
