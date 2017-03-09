@@ -124,8 +124,8 @@ FriendlyChat.prototype.signOut = function() {
 FriendlyChat.prototype.onAuthStateChanged = function(user) {
   if (user) { // User is signed in!
     // Get profile pic and user's name from the Firebase user object.
-    var profilePicUrl = null;   // TODO(DEVELOPER): Get profile pic.
-    var userName = null;        // TODO(DEVELOPER): Get user's name.
+    var profilePicUrl = user.photoURL;   // TODO(DEVELOPER): Get profile pic.
+    var userName = user.displayName;        // TODO(DEVELOPER): Get user's name.
 
     // Set the user's profile pic and name.
     this.userPic.style.backgroundImage = 'url(' + profilePicUrl + ')';
